@@ -1,0 +1,32 @@
+<!-- <h1>Bem-vindo ao {{ title }}</h1>
+
+<select [(ngModel)] = "tecnologia">
+  <option *ngFor="let item of tecnologias; index as cont">{{ item }}</option>
+</select>
+
+<p *ngIf="isJava(); then tecSelec; else tecNaoSelec"></p>
+<p *ngIf="isCarinha(); then tecSelec; else tecNaoSelec"></p>
+<p *ngIf="isHello(); then tecSelec; else tecNaoSelec"></p>
+<p *ngIf="isWorld(); then tecSelec; else tecNaoSelec"></p>
+
+<button (click)="adicionarFotos()">Adicionar fotos</button>
+
+<button (click)="mostrarFotos()">Mostrar fotos</button>
+
+<div *ngFor="let foto of fotos">
+  <input accept="image/png,image/jpeg,image/jfif" type="file" [(ngModel)]="foto.arquivo">
+</div>
+
+<ng-template #tecNaoSelec>
+  <p>tecnologia não selecionada</p>
+</ng-template>
+
+<ng-template #tecSelec>
+  <p [style.background-color]="escolherCor()">{{ tecnologia }}</p>
+</ng-template> -->
+
+<!-- <app-botao (clicado)="fuiClicado()"></app-botao>
+{{ contador }} -->
+<app-botao [(valor)]="appValor"></app-botao>
+
+{{ appValor }}
